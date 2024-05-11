@@ -1,0 +1,480 @@
+.val{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.pic{
+    height: 50vh;
+    width: 100%;
+    /* background-color: blanchedalmond; */
+    display: grid;
+    grid-template-columns: repeat(5,100%);
+  animation: bg 20s ease-in-out infinite alternate ;
+  
+}
+.pic #bg-img1{
+    height: 50vh;
+    width: 100%;
+    background-image: url(member.webp);
+    background-position: center;
+    background-size: cover;
+}
+.pic #bg-img2{
+    height: 50vh;
+    width: 100%;
+    background-image: url(bg7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.pic #bg-img3{
+    height: 50vh;
+    width: 100%;
+    background-image: url(bg9.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.pic #bg-img4{
+    height: 50vh;
+    width: 100%;
+    background-image: url(bg3.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+@keyframes bg{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}  
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+  
+  }
+.line{
+    height: 200px;
+    width: 500px;
+    /* background-color: blue; */
+    top: 40%;
+    left: 15%;
+    position: absolute;
+    transform: translate(-30%,-20%);
+}
+.line span{
+    font-size: 3.5rem;
+    font-style: italic;
+    font-weight: 900;
+    color: crimson;
+}
+.line p{
+    font-size: 1.5rem;
+    color: beige;
+}
+.wrapper{
+        height: auto;
+        width: 100%;
+        background-color: #F5F5F5;
+        border: 2px solid black;
+        color: black;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+}
+.left{
+    width: 50%;
+    height: 100%;
+    background-color: #FFFFFF;
+    padding: 20px 10px 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    margin-top: 20px;
+    /* border: 1px solid #333; */
+    
+   
+}
+.left h1{
+    font-size: 2.3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: crimson;
+    margin-bottom: 10px;
+}
+.right{
+    width: 32%;
+    height: 100%;
+    background-color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+ 
+}
+.right h1{
+    font-size: 1.8rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: crimson;
+}
+
+/* tab styling */
+.tab{
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid  #626262;
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 5px; */
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.tab label{
+    width: 20%;
+    height: 40px;
+    background-color:  #FFFFFF;
+    /* border: 1px solid #eee; */
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.tab label:hover{
+    background-color: crimson;
+    color: white;
+}
+.tab input[type=radio]{
+    display: none;
+}
+.tab input:checked + label {
+    background-color: crimson;
+    color: white;
+}
+
+ 
+/* drop styling */
+.drop{
+    width: 100%;
+    height: max-content;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px 10px 20px 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    /* box-shadow: 0 5px 8px 0 crimson; */
+    /* border-bottom: 2px solid #333; */
+    border-top: 1px solid #333;
+    
+}
+.drop .list-item{
+    margin: 0;
+    height: max-content;
+    width: 98%;
+    box-sizing: border-box;
+    /* background-color: ; */
+    display: flex;
+    align-items: center;
+    /* border-radius: 10px; */
+    gap: 30px;
+    padding: 10px;
+
+    border-bottom: 2px solid #4d4c4c;
+    
+    /* box-shadow: 0 3px 3px 0 #333; */
+}
+.drop .list-item:hover{
+ 
+    border-bottom: 2px solid crimson;
+}
+
+.drop .list-item input{
+    height: 15px;
+    width: 15px;
+}
+
+.drop label{
+    width: 100%;
+    /* background-color: grey; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drop label .info{
+    color: #444;
+    /* font-family: ; */
+}
+
+.drop label .info h1{
+    font-size: 1.8rem;
+    color: #232323;
+}
+.drop label .info .desc{
+    color: #444;
+    font-style: italic;
+   
+}
+
+
+.drop label .price{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 30%;
+}
+.drop label .price .discounted{
+    text-decoration: line-through;
+    color: #666;
+    padding-right: 5px ;
+}
+.drop label .price strong{
+    color: crimson;
+    font-size: 1.3rem;
+}
+.drop label .price .time{
+    color: #444;
+}
+
+/* sidebar styling */
+.plan{
+    height: max-content;
+    width: 70%;
+    background-color:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-right: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    /* box-shadow: 0 5px 8px 0 crimson; */
+    
+}
+.sidebar{
+    width: 90%;
+    height: auto;
+    /* background-color: rgb(106, 0, 255); */
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(65, 64, 64);
+  
+}
+.start{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.start .logo{
+    height: 50px;
+    width: 50px;
+    /* background-color: beige; */
+    background: url('logo.webp');
+    background-size: cover;
+    border-radius: 50%;
+}
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    color: #444;
+    font-style: italic;
+    height: 40px;
+    width: 70%;
+    /* background-color: aqua; */
+    margin-top: 20px;
+}
+.coupon{
+    height: 40px;
+    width: 85%;
+    /* background-color: aqua; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coupon input{
+    height: 40px;
+    width: 80%;
+    /* border-radius: 5px; */
+    padding-left: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.coupon button{
+    height: 44px;
+    width: 110px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* border-radius: 5px; */
+    background-color: crimson;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: beige;
+}
+.amount{
+    margin-top: 40px;
+    height: 40px;
+    width: 90%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.pay{
+    margin-top: 5px;
+        height: 50px;
+        width: 70%;
+        /* background-color: aqua; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+   
+}
+.pay button{
+    height: 40px;
+    width: 400px;
+    font-size: larger;
+    background-color: crimson;
+    font-weight: 800;
+    color: beige;
+    border-radius: 5px;
+}
+
+/* member details */
+.mem-details{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mem-content{
+    height: 50vh;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    
+    /* background-color: aliceblue; */
+}
+.mem-content .text{
+    padding-top: 20px;
+    color: beige;
+    
+}
+.mem-content .text span{
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: italic;
+    color: crimson;
+}
+.mem-content .text h2{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.mem-content .text p{
+    margin-top: 20px;
+}
+ .mem-form{
+    height: 350px;
+    width: 350px;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    /* padding-left: 10px; */
+    padding: 10px 0px 0px 10px;
+}
+.mem-form span{
+    font-size: 1.5rem;
+    color: rgb(84,89,95);
+    font-weight: 800;
+    font-style: italic;
+}
+.mem-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+   
+}
+.mem-input input{
+    height: 30px;
+    margin-top: 10px;
+    width: 90%;
+    padding-left: 10px;
+   
+    
+}
+.mem-input label{
+    color: black;
+}
+.mem-check{
+    margin-top: 20px;
+    height: fit-content;
+    width: 80%;
+    /* background-color: aqua; */
+    margin-left: 20px;
+ 
+}
+.mem-check label{
+   color: #232323;
+   font-size: 1.1rem;
+   font-weight: 500;
+
+
+}
+.mem-send{
+    height: 40px;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 20px; */
+    margin-top: 10px;
+}
+.mem-btn button{
+    height: 40px;
+    width: 250px;
+    color: beige;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+    background-color: crimson;
+    border-radius: 5px;
+    cursor: pointer;
+    /* background-color: brown; */
+}
+

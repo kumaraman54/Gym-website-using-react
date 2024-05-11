@@ -1,0 +1,35 @@
+*{
+  padding: 0;
+  margin: 0;
+
+}
+/* .app {
+   height: 100vh;
+   background-image: url(apple.png);
+   background-size: cover;
+} */
+body{
+  background-color: rgb(18,18,18);
+  color: aliceblue;
+  overflow-x: hidden;
+  max-height: fit-content;
+
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

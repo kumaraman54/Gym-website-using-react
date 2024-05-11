@@ -1,0 +1,105 @@
+.head{
+    height: 110px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid beige;
+    /* position: fixed; */
+  
+  }
+  .logo{
+  
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+  .head img{
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+    border-radius: 50%;
+    
+    
+    /* transition: all 0.2s; */
+    /* border: 2px solid crimson; */
+    cursor: pointer;
+    
+  }
+  .head img:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 2px 2px 1px rgba(232, 69, 69, 0.689);
+  
+  }
+  .head h1{
+    color: beige;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    transition-duration: 1s ;
+    cursor: pointer;
+   text-decoration: none;
+
+  }
+ a{
+    text-decoration: none;
+   
+  }
+
+  .head h2{
+    margin-top: 10px;
+    color: beige;
+    font-style: italic;
+    cursor: pointer;
+  }
+  .head h1:hover{
+      color: crimson;
+  }
+  
+  .compo ul{
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: beige;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: larger;
+  }
+  .compo{
+    height: 90px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .compo ul li{
+    min-height: 60px;
+    /* background-color: blue; */
+    list-style-type: none;
+    position: relative;
+    top: 0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .compo ul li a{
+    color: beige;
+    text-decoration: none;
+  }
+  li:hover{
+    margin-top: -12px;
+    
+  }
+  
+   li:hover a:hover{
+    color: crimson;
+  }
+  

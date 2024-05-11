@@ -1,0 +1,91 @@
+
+.vid{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.bg-clip{
+   height: 90vh;
+   width: 100%;
+   object-fit: cover;
+   position: absolute;
+   z-index: -1;
+}
+.sign-box{
+    backdrop-filter: blur(12px);
+    /* margin-left: 20px; */
+    height: 450px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid beige;
+    border-radius: 15px;
+}
+.sign-box span{
+    color:beige;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+
+}
+.para{
+    display: flex;
+    justify-content: center;
+
+}
+.sign-form{
+    /* margin-top: 10px; */
+    height: 90px;
+    /* background-color: tomato; */
+    margin-bottom: 10vh;
+
+}
+.sign-form h2{
+    margin-top: 10px;
+    font-size: 1rem;
+
+}
+
+.sign-form input{
+    color: white;
+    margin-top: 10px;
+    height: 40px;
+    width: 350px;
+    background: transparent;
+    border: 0px solid #383535;
+    outline: none;
+    border-bottom: 2px solid beige;
+}
+.sign-form input:hover{
+    outline: none;
+    border-bottom: 3px solid beige;
+}
+.sign-form input:active{
+    border: none;
+}
+.terms{
+    /* margin-top: 10px; */
+    height: 80px;
+    width: 450px;
+    /* background-color: aqua; */
+    padding-top: 20px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+.terms p{
+    font-size: medium;
+}
+.sign-btn button{
+    height: 40px;
+    width: 90px;
+    font-weight: 600;
+    background-color: beige;
+    cursor: pointer;
+}

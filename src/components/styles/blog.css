@@ -1,0 +1,348 @@
+.blg-content{
+    height: max-content;
+    width: 100%;
+    background-color:#FFFFFF; 
+
+    
+    /* z-index: -1; */
+}
+.blg-desc{
+    height: 60vh;
+    width: 100%;
+    background-image: url(test4.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 40px;
+}
+.blg-desc div{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: blue; */
+}
+
+.blg-desc span{
+    font-size: 4rem;
+    font-weight: 700;
+    font-style: italic;
+    color: crimson;
+    
+}
+.blg-desc p{
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-left: 10px;
+}
+.blg-detail{
+    height: 150vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    margin-top: 20px;
+    
+}
+
+.blg-detail h2{
+    color: crimson;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.blg-div{
+    /* backdrop-filter: blur(20px); */
+    height: 220px;
+    width: 60%;
+    /* background-color: crimson; */
+    /* border: 2px solid crimson; */
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+
+    position: relative;
+    
+    border-radius: 10px;
+    opacity: 0;
+    gap: 10px;
+
+    
+
+}
+
+
+.blg-img{
+    height: 130px;
+    width: 80px;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* padding-bottom: 10px; */
+}
+.blg-img p{
+    margin-top: 10px;
+    color: black;
+}
+
+.blg-img div{
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    border-radius: 50%;
+    background-size: cover;
+}
+.blg-para::before{
+    content: "";
+    height: 0px;
+    width: 0px;
+    /* background-color: rgb(43, 42, 42); */
+    position: absolute;
+    top: -1.92px;
+    left: -20px;
+    /* border-radius: 0% 0% 0% 100%; */
+    border-right: 1.22em solid rgb(43, 42, 42);
+    border-bottom: 1.22em solid transparent;
+    border-top: 1.22em solid transparent;
+
+}
+.blg-para{
+    position: relative;
+    height: max-content;
+    width: 70%;
+    background-color: rgb(43, 42, 42);
+    border: 2px solid rgb(43, 42, 42);
+    padding: 20px 25px;
+    color: black;
+
+
+}
+.blg-para span{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: rgb(221, 31, 69);
+    font-style: italic;
+}
+.blg-para p{
+    padding-top: 15px;
+    color: beige;
+    text-align: justify;
+}
+.blg-para div{
+    margin-top: 10px;
+    font-size: 1rem;
+    color: beige;
+}
+.disc{
+    height: 45px;
+    width: 97%;
+    /* background-color: blue; */
+    border-top: 1px solid #E0E0E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.disc p{
+    color: #585858;
+    font-style: italic;
+}
+
+.animate{
+    /* Animate it */
+    animation: slide-up 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.animate.delay-100{
+    animation-delay: 100ms;
+}
+
+.animate.delay-200{
+    animation-delay: 400ms;
+}
+
+.animate.delay-300{
+    animation-delay: 600ms;
+}
+
+
+@keyframes slide-up {
+    from{
+        top: 530px;
+        opacity: 1;
+    }
+    to{
+        top: 10px;
+        opacity: 1;
+    }
+}
+
+.reviews{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.rev-form{
+    width: 40%;
+    height: 40vh;
+    /* background-color: aqua; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+
+
+}
+.rev-form h1{
+    font-size: 2rem;
+    font-style: italic;
+    color: crimson;
+}
+
+.rev-form div{
+    height: fit-content;
+    width: 500px;
+ 
+    /* background-color: black; */
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+}
+.rev-form div input{
+    height: 40px;
+    width: 300px;
+    background-color: rgb(18,18,18);
+    border: 2px solid #d7cccc;
+    padding-left: 10px;
+    color: beige;
+   
+}
+.rev-form div input::placeholder{
+    color: beige;
+    margin-left: 10px;
+}
+.row1{
+    height: fit-content;
+    width: 500px;
+    /* background-color: black;  */
+}
+.row2{
+    height: fit-content;
+    width: 500px;
+    /* background-color: black;  */
+}
+.row2 textarea{
+    padding-top: 10px;
+    padding-left: 10px;
+   background-color: rgb(18,18,18);
+   width: 100%;
+   color: beige;
+   height: 150px;
+  border:  2px solid #d7cccc;
+   resize: none;
+}
+.row2 textarea::placeholder{
+    color: beige;
+}
+.msg{
+    height: 40vh;
+    width: 20%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.msg span{
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    color: crimson;
+}
+.form-btn button{
+    
+        height: 40px;
+        width: 180px;
+        font-size: 1rem;
+        background-color: crimson;
+        border: 1px solid black;
+        border-radius: 5px;
+        color: beige;
+        font-weight: 800;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        transition: transform .3s;
+        cursor: pointer;
+       
+      
+      
+}
+.note{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* border-top: 1px solid rgb(168, 168, 168); */
+}
+.note p{
+    color: #b0a9a9;
+}
+
+/* <div className='blg-img'>
+<div>
+ </div>
+ <p>shivam</p>
+</div>
+<div className='blg-para'>
+    <span>Great experience, great machines, and great staff</span>
+    <p>I've tried it once when i was in Kolkata and it was great. The cardio machines were separated which is quite good to prevent the noise, the machines were quite maintained, and there is quite good set of different machines.
+      Only the benches needed some work as they were old, and unfortunately the Dumbbells were misplaced and i guess it is because of the athletes going there not returning them to their right places</p>
+     <div><b>Date of experience:</b>February 2024.</div>
+
+    </div> */
+    /* <div className='blg-div delay-200'>
+    <div className='blg-img'>
+    <div>
+     </div>
+     <p>shivam</p>
+    </div>
+
+    
+    <div className='blg-para'>
+        <span>Great experience, great machines, and great staff</span>
+        <p>I've tried it once when i was in Kolkata and it was great. The cardio machines were separated which is quite good to prevent the noise, the machines were quite maintained, and there is quite good set of different machines.
+          Only the benches needed some work as they were old, and unfortunately the Dumbbells were misplaced and i guess it is because of the athletes going there not returning them to their right places</p>
+         <div><b>Date of experience:</b>February 2024.</div>
+  
+        </div>
+      
+  </div>
+
+  <div className='blg-div delay-300'>
+    <div className='blg-img'>
+    <div>
+     </div>
+     <p>shivam</p>
+    </div>
+    <div className='blg-para'>
+        <span>Great experience, great machines, and great staff</span>
+        <p>I've tried it once when i was in Kolkata and it was great. The cardio machines were separated which is quite good to prevent the noise, the machines were quite maintained, and there is quite good set of different machines.
+          Only the benches needed some work as they were old, and unfortunately the Dumbbells were misplaced and i guess it is because of the athletes going there not returning them to their right places</p>
+         <div><b>Date of experience:</b>February 2024.</div>
+  
+        </div>
+      
+  </div> */
