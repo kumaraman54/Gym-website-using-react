@@ -9,7 +9,7 @@
 .blg-desc{
     height: 60vh;
     width: 100%;
-    background-image: url(test4.png);
+    /* background-image: url(test4.png); */
     background-size: cover;
     background-position: center;
     display: flex;

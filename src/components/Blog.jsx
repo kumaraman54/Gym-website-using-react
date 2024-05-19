@@ -64,7 +64,9 @@ const Blog = () => {
   return (
     <>
     <div className='blg-content'>
-    <div className='blg-desc'>
+    <div className='blg-desc' style={{
+      backgroundImage: `url(test4.png)`
+    }}>
     <div>
     <span>Our Success Stories</span>
     <p>WHAT CLIENT'S SAY </p>

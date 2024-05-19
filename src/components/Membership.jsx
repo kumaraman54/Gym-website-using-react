@@ -139,11 +139,21 @@ const Membership = () => {
     <>
     <div className='val'>
     <div className='pic'>
-    <div id='bg-img1'></div>
-        <div id='bg-img2'> </div>
-        <div id='bg-img3'></div>
-        <div id='bg-img4'></div>
-        <div id='bg-img5'></div>
+        <div id='bg-img1' style={{
+           backgroundImage: `url("./member.webp")`
+        }}></div>
+        <div id='bg-img2' style={{
+          backgroundImage: `url("./bg7.jpg")`
+        }}></div>
+        <div id='bg-img3' style={{
+          backgroundImage: `url("./bg9.jpg")`
+        }}></div>
+        <div id='bg-img4' style={{
+          backgroundImage: `url("./bg3.webp")`
+        }}></div>
+        <div id='bg-img5' style={{
+           backgroundImage: `url("./member.webp")`
+        }}></div>
        
       
  

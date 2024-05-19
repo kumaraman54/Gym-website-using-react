@@ -19,28 +19,28 @@
 .pic #bg-img1{
     height: 50vh;
     width: 100%;
-    background-image: url("./member.webp");
+    /* background-image: url("./member.webp"); */
     background-position: center;
     background-size: cover;
 }
 .pic #bg-img2{
     height: 50vh;
     width: 100%;
-    background-image: url("./bg7.jpg");
+    /* background-image: url("./bg7.jpg"); */
     background-position: center;
     background-size: cover;
 }
 .pic #bg-img3{
     height: 50vh;
     width: 100%;
-    background-image: url("./bg9.jpg");
+    /* background-image: url("./bg9.jpg"); */
     background-position: center;
     background-size: cover;
 }
 .pic #bg-img4{
     height: 50vh;
     width: 100%;
-    background-image: url("./bg3.webp");
+    /* background-image: url("./bg3.webp"); */
     background-position: center;
     background-size: cover;
 }
