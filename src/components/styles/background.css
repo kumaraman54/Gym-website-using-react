@@ -2,7 +2,7 @@
 /* Background */
 .wallpaper{
     height: 90vh;
-    background-image: url(pic.jpg);
+    background-image: url(./pic.jpg);
     background-size:cover;
   
   
