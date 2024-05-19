@@ -6,7 +6,9 @@ const Background = () => {
   
   return (
     <>
-    <div className='wallpaper'>
+    <div className='wallpaper' style={{
+      backgroundImage: `url("./pic.jpg")`
+    }}>
      
       <div className='quote'>
       <p>Some people want it to happen,<br></br>Some wish it would happen.<br></br>Others make it happen with</p>
