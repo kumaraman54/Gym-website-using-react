@@ -72,11 +72,21 @@ const Background = () => {
         
         {/* <button  id='prevslide' className='symbol'><FontAwesomeIcon icon={fas.faChevronLeft} /></button> */}
         <div className='images'>
-        <div id='Slider-img1'></div>
-        <div id='Slider-img2'></div>
-        <div id='Slider-img3'></div>
-        <div id='Slider-img4'></div>
-        <div id='Slider-img5'></div>
+        <div id='Slider-img1' style={{
+           backgroundImage: `url(img1.jpg)`
+        }}></div>
+        <div id='Slider-img2' style={{
+            backgroundImage: `url(img-2.webp)`
+        }}></div>
+        <div id='Slider-img3' style={{
+           backgroundImage: `url(img-3.jpeg)`
+        }}></div>
+        <div id='Slider-img4' style={{
+             backgroundImage: `url(img-4.jpg)`
+        }}></div>
+        <div id='Slider-img5' style={{
+           backgroundImage: `url(img-5.jpg)`
+        }}></div>
 
 </div>
 
